@@ -1,8 +1,8 @@
 /**
  * 
- * @param {*} str abc123.3456
+ * @param {*} str abc123.456
  * @param {*} round 2
- * @returns 123.34
+ * @returns 123.45
  */
 function formatString(str,round){
    const numArray = str.replace(/[^0-9/.]/g,"").split(".");
@@ -11,4 +11,4 @@ function formatString(str,round){
    return numArray[0]+"."+suffix;
 }
 
-console.log (formatString("abc123.3456", 2)) 
+console.log (formatString("abc123.456", 2)) 
